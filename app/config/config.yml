@@ -73,5 +73,5 @@ fos_user:
     firewall_name: main
     user_class: AppBundle\Domain\Entity\User
     from_email:
-        address: "%mailer_user%"
-        sender_name: "%application_name%"
+        address: info@events.com
+        sender_name: symfony-events
