@@ -1,0 +1,9 @@
+services:
+    post_doctrine_repository:
+        class: AppBundle\Infrastructure\Entity\DoctrineRepositories\DoctrinePostRepository
+
+    user_doctrine_repository:
+            class: AppBundle\Infrastructure\Entity\DoctrineRepositories\DoctrineUserRepository
+
+    comment_doctrine_repository:
+                class: AppBundle\Infrastructure\Entity\DoctrineRepositories\DoctrineCommentRepository
