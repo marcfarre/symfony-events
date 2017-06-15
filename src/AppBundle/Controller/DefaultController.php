@@ -13,12 +13,12 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        $lastPosts = $this->get('post_doctrine_repository')->getLast10Posts();
-
+        // $lastPosts = $this->get('post_doctrine_repository')->getLast10Posts();
+        $lastPosts = [];
         $params = array(
             'lastPosts' => $lastPosts
         );
 
-        return $this->render('default', $params);
+        return $this->render('base.html.twig', $params);
     }
 }
